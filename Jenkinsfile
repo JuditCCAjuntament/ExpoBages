@@ -1,7 +1,7 @@
 pipeline {
   environment {
     PROJECT = "websmunicipals"
-    APP_NAME = "observatoriequitat"
+    APP_NAME = "expobages"
     CLUSTER = "manresa"
     CLUSTER_ZONE = "europe-west1-b"
     IMAGE_TAG = "eu.gcr.io/${PROJECT}/${APP_NAME}"

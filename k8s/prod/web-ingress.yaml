@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-observatoriequitat-web
+  name: ingress-expobages-web
   annotations:
     kubernetes.io/ingress.class: nginx
     cert-manager.io/issuer: "letsencrypt-web-manresa-cat"
@@ -14,10 +14,10 @@ spec:
     - host: web.manresa.cat
       http:
         paths:
-          - path: /observatoriequitat
+          - path: /expobages
             pathType: Prefix
             backend:
               service:
-                name: observatoriequitat-web
+                name: expobages-web
                 port:
                   number: 80

@@ -5,11 +5,11 @@ services:
     container_name: redis
     image: redis:4.0-alpine
     restart: always
-  festadelallum-web:
+  expobages-web:
     build:
       context: ./images/web
       dockerfile: Dockerfile.devel
-    container_name: festadelallum-web-devel
+    container_name: expobages-web-devel
     environment:
       - REDIS_HOST=redis
       - URL_API_WEB_DEVEL=https://dev.manresa.cat/api/web
@@ -26,4 +26,4 @@ services:
       - 80:80
     volumes:
       #allow *.sql, *.sql.gz, or *.sh and is execute only if data directory is empty
-      - ./images/web/wwwroot/webs/festadelallum:/var/www/html/web/webs/festadelallum
+      - ./images/web/wwwroot/webs/expobages:/var/www/html/web/webs/expobages

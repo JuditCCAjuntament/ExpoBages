@@ -1,0 +1,426 @@
+.homeContent::-webkit-scrollbar {
+    display: none;
+}
+
+.homeContent::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.homeContent::-moz-scrollbar {
+    display: none;
+}
+
+.homeContent::-moz-scrollbar-thumb {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8vh !important;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+    background-image: linear-gradient(40deg,  rgba(2, 79, 119, 1) 100%, #c4bfeb 12%);
+    height: 8vh;
+    position: fixed;  
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    background-position: center;
+}
+
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: white;
+
+}
+
+.titleDiv {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7931547619047619) 0%, rgba(2, 79, 119, 0.90) 100%), url("../img/fllum_banner.jpg");
+    width: 100%;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.mobileHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.mobileHolder ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-img {
+    margin-top: 1vh;
+    height: 11vh;
+    align-self: flex-start;
+}
+
+.menu-text {
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: 600;
+    font-size: 18px;
+    font-size: calc(100%) !important;
+}
+
+
+nav i.material-icons {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    transition: all .5s;
+}
+
+.menu-text:hover i.material-icons {
+    transform: rotate(180deg);
+
+}
+
+
+
+.mainBody {
+    display: flex !important;
+    min-height: 100%;
+    /*background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7931547619047619) 0%, rgba(2, 79, 119,0.90) 100%), url("../img/fllum_banner.jpg");
+   */
+    flex-wrap: wrap;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center;
+}
+
+.mbdHalf {
+    width: 50%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.programaDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-floating {
+    background-color: rgba(2, 79, 119, 1);
+    top: -10px;
+}
+
+.btn-floating:hover {
+    background-color: rgb(1, 94, 144);
+}
+
+
+.btn-floating .material-symbols-outlined {
+    font-size: 40px;
+    font-weight: 400;
+
+}
+
+.imgcontainer {
+    height: 68vh;
+}
+
+.mbdHalf img {
+    height: 100%;
+}
+
+.left {
+    margin-left: 10px;
+}
+
+.right {
+    margin-right: 10px;
+}
+
+.homeContent {
+    overflow-y: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1vh;
+}
+
+.homeContent a {
+    text-transform: none !important;
+}
+
+.homeContent .material-icons {
+    font-size: 24px;
+    vertical-align: bottom;
+}
+
+
+
+.card a {
+    color: white !important;
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-weight: bold;
+    color: white !important;
+}
+
+
+.collapsibleItems {
+    z-index: 999;
+    position: fixed;
+    top: 7vh;
+    display: none;
+    min-width: 100vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    border-style: solid;
+    border-color: #ffffff00;
+    background-image: linear-gradient(180deg, rgba(2, 79, 119, 1) 100%,#6866dd 0%);
+    justify-items: right;
+    flex-wrap: wrap;
+}
+
+.collapsibleItems a {
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    text-align: center;
+    min-width: 25%;
+
+}
+
+.collapsibleItems a:hover {
+    transition: background-color .3s;
+    background-color: rgba(233, 233, 233, 0.479);
+}
+
+.submenu {
+    margin-left: 10px;
+}
+
+hr {
+    width: 80%;
+    border-top-color: rgba(250, 235, 215, 0.301);
+    height: 1px;
+}
+
+.submenu li a {
+    color: #742369cb;
+    font-size: calc(120%) !important;
+}
+
+.mobileNavContainer {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+    border-left-width: 0px;
+    border-right-width: 0px;
+
+}
+
+.moibleSearch {
+    display: none;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .portada {
+        display: none;
+    }
+    .sidenav li{
+        padding-top: 2vh;
+    }
+    .sidenav {
+        background-image: linear-gradient(40deg, rgba(2, 79, 119, 1) 100%, #c4bfeb 12%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .historiaContent img {
+        display: none;
+    }
+
+    nav {
+        transition: all 0.4s ease-in-out;
+        height: 10vh;
+        position: fixed;
+    }
+
+    .title {
+        width: 99%;
+        text-align: center;
+    }
+
+    .titleDiv {
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
+        
+        margin-top: 10vh;
+    }
+
+
+    .logo-img {
+        z-index: 999;
+        margin-top: 20px;
+        height: 7vh;
+        margin-right: 20vw;
+    }
+
+    .nav-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav i.material-icons {
+        color: #ffffff;
+        font-size: 18px;
+        font-size: calc(250%)
+    }
+
+    .menu-text {
+        font-weight: 800;
+        font-size: calc(130%) !important;
+
+    }
+
+    .goBack {
+        padding: 0px;
+    }
+
+    .searchTrigger {
+        padding: 0px;
+    }
+
+    .moibleSearch {
+        z-index: -10;
+        margin-top: -25px;
+        padding-left: 10px;
+        width: 100vw;
+        height: fit-content;
+        display: block;
+
+
+    }
+
+    .moibleSearch nuclia-search {
+        z-index: -10;
+        margin: 0px;
+        width: 95%;
+    }
+
+    .mobileHolder {
+        width: 95%;
+        justify-content: right;
+    }
+
+    #logo_centre {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #logo_centre img {
+        margin: 15px !important;
+        max-height: auto !important;
+        max-width: 30vw !important;
+
+
+    }
+
+
+}
+
+footer {
+    background-color: rgba(18, 18, 18, 0.92);
+    padding-top: 40px;
+    width: 100%;
+    margin: 0;
+}
+
+
+.footerText {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #222222;
+    text-align: left;
+    color: #666;
+    font-size: 18px !important;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    float: left;
+
+
+}
+
+.searchContainer {
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.searchContainer .goBack {
+    padding: 10px;
+}
+
+.goBack:hover {
+    background-color: #22222234;
+}
+
+nuclia-search {
+    display: inline-block;
+    width: 35vw;
+
+    color: black;
+}

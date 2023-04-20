@@ -1,0 +1,60 @@
+.recerca{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(40deg,rgba(18, 18, 18, 0.85) 100%,#ebc9bf 40%);
+padding-left: 10vw;
+padding-right: 10vw;
+padding-bottom: 5vh;
+padding-top: 7vh;
+height: 100%;
+}
+.recercaContent{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+}
+.historiaContent img {
+    height: 83vh
+}
+
+.recercalinks{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.recerca .card{
+    background-color: rgba(255,255,255,0.1);
+    -webkit-box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+    box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+    min-width: 40%;
+}
+
+.recerca .title{
+    color: white;
+    justify-self: right;
+}
+.recerca a{
+    font-weight: bold;
+    font-size: 125%;
+    line-height: 30px;
+    color: white !important;
+}
+.recerca .card:hover a{
+    text-decoration: underline;
+}
+
+.recerca .material-symbols-outlined{
+    font-size: 32px;
+    vertical-align: middle;
+}

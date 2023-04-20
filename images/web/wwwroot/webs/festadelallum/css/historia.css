@@ -1,0 +1,80 @@
+.historia{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(40deg,rgba(18, 18, 18, 0.85) 100%,#c4bfeb 12%);
+padding-left: 10vw;
+padding-right: 10vw;
+padding-bottom: 5vh;
+padding-top: 7vh;
+height: 100%;
+}
+.historiaContent{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+}
+.historiaContent img {
+    height: 83vh
+}
+.historia img{
+    margin-left: 15px;
+    -webkit-box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+    box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+}
+.historialinks{
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+.historia .card{
+    background-color: rgba(255,255,255,0.1);
+    -webkit-box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+    box-shadow: -13px 13px 2px 0px rgba(0,0,0,0.45);
+}
+
+.historia .title{
+    color: white;
+    justify-self: right;
+}
+.historia a{
+    font-weight: bold;
+    font-size: 125%;
+    line-height: 30px;
+    color: white !important;
+}
+.historia .card:hover a{
+    text-decoration: underline;
+}
+
+.historia .material-symbols-outlined{
+    font-size: 32px;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 720px){
+    .historialinks {
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center
+    }
+    .recerca .card{
+        width: 100%;
+    }
+    .card .card-action{
+        text-align: center;
+    }
+}

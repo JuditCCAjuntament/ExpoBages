@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+  redis:
+    container_name: redis
+    image: redis:4.0-alpine
+    restart: always
+  festadelallum-web:
+    build:
+      context: ./images/web
+      dockerfile: Dockerfile
+    container_name: festadelallum-web-devel
+    environment:
+      - REDIS_HOST=redis
+      - URL_API_WEB_DEVEL=https://api-devel-v2.manresa.cat/api/web
+      - URL_API_WEB_PROD=https://api-v2.manresa.cat/api/web
+      - URL_API_AGENDA_DEVEL=https://api-devel-v2.manresa.cat/api/agenda
+      - URL_API_AGENDA_PROD=https://api-v2.manresa.cat/api/agenda
+      - URL_API_NOTICIES_PROD=https://www.manresa.cat/api_noticies/api/noticies
+      - URL_DEVEL=https://dev.manresa.cat
+      - URL_LOCAL=http://localhost
+      - URL_DOCS_MEDIA=https://web.manresa.cat/media/
+    depends_on:
+      - redis
+    ports:
+      - 80:80
+    volumes:
+      #allow *.sql, *.sql.gz, or *.sh and is execute only if data directory is empty
+      - ./images/web/wwwroot/webs/festadelallum:/var/www/html/web/webs/festadelallum

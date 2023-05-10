@@ -5,7 +5,7 @@
     {$content.contingut}
 
     {if (isset($vars.total) && $vars.total > 0) || sizeof($docs) > 0}
-    <div class="contingut-detall">
+    <!--div class="contingut-detall">
         {if (isset($vars.adreca) && $vars.adreca != '') ||
             (isset($vars.telefon) && $vars.telefon != '') ||
             (isset($vars.email) && $vars.email != '') ||
@@ -158,12 +158,7 @@
                 </div>
             </div>
         {/if}
-    </div>
+    </div-->
 {/if}
-</div>
-
-
-
-
 
 

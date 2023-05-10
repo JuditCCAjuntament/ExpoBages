@@ -91,7 +91,7 @@
     height: 37vh;
     z-index: -1;
     padding: 10px;
-    background-image: url("../../img/passeig.jpg");
+    background-image: url("/expobages/assets/img/passeig.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

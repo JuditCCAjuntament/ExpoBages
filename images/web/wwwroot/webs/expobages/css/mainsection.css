@@ -23,7 +23,7 @@
 .box-link {
     width: 20vw;
     height: 20vw;
-    background-image: url("../../img/placeholder.png");
+    background-image: url("/expobages/assets/img/placeholder.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,7 +41,7 @@
 
 .box-link1,
 .box-link4 {
-    background: linear-gradient(#b74c97a0, #b74c97a0), url("../../img/1.JPG");
+    background: linear-gradient(#b74c97a0, #b74c97a0), url("/expobages/assets/img/1.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,17 +49,17 @@
 }
 
 .box-link2 {
-    background: linear-gradient(#71bf9ba5, #71bf9ba5), url("../../img/2.JPG");
+    background: linear-gradient(#71bf9ba5, #71bf9ba5), url("/expobages/assets/img/2.JPG");
 }
 
 .box-link4 {
     background-size: cover !important;
-    background: linear-gradient(#b74c97a0, #b74c97a0), url("../../img/4.JPG");
+    background: linear-gradient(#b74c97a0, #b74c97a0), url("/expobages/assets/img/4.JPG");
 }
 
 .box-link3,
 .box-link2 {
-    background: linear-gradient(#71bf9ba5, #71bf9ba5), url("../../img/3.JPG");
+    background: linear-gradient(#71bf9ba5, #71bf9ba5), url("/expobages/assets/img/3.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

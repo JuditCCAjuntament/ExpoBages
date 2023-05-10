@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("../../img/logo.png");
+    background-image: url("../img/logo.png");
     overflow: hidden;
 }
 
@@ -70,7 +70,7 @@ nav {
 
 .fimage {
     min-height: 35vh;
-    background-image: url("../../img/skyline.png");
+    background-image: url("../img/skyline.png");
     background-repeat: no-repeat;
     background-size: cover; 
 }

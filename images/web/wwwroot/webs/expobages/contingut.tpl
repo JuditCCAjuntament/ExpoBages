@@ -34,10 +34,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExpoBages</title>
-    <link rel="stylesheet" href="{$web_urlCss}/base.css">
-    <link rel="stylesheet" href="{$web_urlCss}/mainsection.css">
-    <link rel="stylesheet" href="{$web_urlCss}/slider.css">
-    <link rel="stylesheet" href="{$web_urlCss}/routes.css">
+    <base href="{$portal.urlBase}/" />
+
+    <link rel="stylesheet" href="{$web_urlCss}base.css">
+    <link rel="stylesheet" href="{$web_urlCss}mainsection.css">
+    <link rel="stylesheet" href="{$web_urlCss}slider.css">
+    <link rel="stylesheet" href="{$web_urlCss}routes.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -49,11 +51,18 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
 </head>
 
 <body>
     <div class="main-body">
+        {if $dump_string}
+
+            {foreach name=dumps item=item from=$dump_string}
+                <div>{$item}</div>
+
+            {/foreach}
+
+        {/if}
         <div class="main-banner">
             <img src="{$web_urlImg}/m.png" alt="err">
         </div>
@@ -80,8 +89,10 @@
         <!-- -->
         {if isset($portal.template_contingut) }
             {include file=$portal.template_contingut}
+
         {/if}
         <!-- -->
+
         <footer>
             <div class="xarxes">
                 <div class="newsletter">
@@ -131,7 +142,9 @@
 
             </div>
         </footer>
+    
     </div>
+
 </body>
 
 </html>

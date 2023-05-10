@@ -16,7 +16,7 @@
 {assign var="nuclia_search" value="https://cdn.nuclia.cloud/nuclia-widget.umd.js"}
 {assign var="gmap_url" 
     value="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=es&amp;q=Manresa,%20Barcelona+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"}
-    {assign var="menus" value="/festadelallum/menu/"}
+{assign var="menus" value="/festadelallum/menu/"}
 
 
 {if isset($pagina.titol)}
@@ -31,146 +31,107 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpoBages</title>
+    <link rel="stylesheet" href="{$web_urlCss}/base.css">
+    <link rel="stylesheet" href="{$web_urlCss}/mainsection.css">
+    <link rel="stylesheet" href="{$web_urlCss}/slider.css">
+    <link rel="stylesheet" href="{$web_urlCss}/routes.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="expires" content="-1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <!-- Compiled and minified JavaScript -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{$web_description}" />
-
-    <base href="{$portal.urlBase}/" />
-
-    <link rel="icon" type="image/png" href="{$web_urlImg}favicon.png" />
-    <link rel="shortcut icon" href="{$web_urlImg}favicon.ico" />
-
-    <link rel="canonical" href="{$web_canonical}" />
-
-
-
-    <title>{$web_title}</title>
-    <link rel="icon" type="image/x-icon" href="{$web_urlImg}icon.png">
-    <!-- Google icons -->
-    <link href="{$google_Icons}" rel="stylesheet">
-    <!-- materialize -->
-    <link rel="stylesheet" href="{$materialize_framework_css}">
-    <!-- JQuery -->
-    <script src="{$jquery_cdn}"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <link href="{$open_sans}" rel="stylesheet">
-    <!-- Nuclia search cdn -->
-    <script src="{$nuclia_search}"></script>
-
-    <link rel="canonical" href="{$web_canonical}" />
-    <link rel="stylesheet" href="{$web_urlCss}menu.css">
-    <link rel="stylesheet" href="{$web_urlCss}ambit.css">
-
-    <link rel="stylesheet" href="{$web_urlCss}contingut.css">
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <div class="mobileHolder">
+    <div class="main-body">
+        <div class="main-banner">
+            <img src="{$web_urlImg}/m.png" alt="err">
+        </div>
+        <nav>
+            <div class="nav-wrapper">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="hide-on-med-and-down">
-                    {foreach from=$portal.menu item=menu}
-                        {if $menu.publicat < 2}
-                            {if $menu.te_fills == 1}
-                                {assign var="expand" value=false}
-                                {foreach from=$menu.fills item=submenu}
-                                    {if $submenu.publicat > 0}
-                                        {assign var="expand" value=true}
-                                    {/if}
-                                {/foreach}
-                                {if $expand}
-                                    <li><a class="menu-text collapsibleIndicadors" href="{$menu.url}" id="{$menu.titol}">{$menu.titol}<i
-                                                class="material-icons">expand_more</i></a></li>
-                                {else}
-                                    <li><a class="menu-text" href="{$menu.url}" id="{$menu.titol}">{$menu.titol}</a></li>
-                                {/if}
-                            {else}
-                                <li><a class="menu-text" href="{$menu.url}" id="{$menu.titol}">{$menu.titol}</a></li>
-                            {/if}
-                        {/if}
-                    {/foreach}
+                <ul class="pclnav hide-on-med-and-down">
+                    <li><a class="menu-link" href="">La Fira</a></li>
+                    <li><a class="menu-link" href="">Àrea expositors</a></li>
+                    <li><a class="menu-link" href="">Premsa</a></li>
+                    <li><a class="menu-link" href="">Contacte</a></li>
+                    <li><a class="menu-link" href="">Com arribar </a></li>
+
                 </ul>
-
             </div>
-
-    </nav>
-    <ul class="sidenav mobileNavContainer" id="mobile-demo">
-        {foreach from=$portal.menu item=menu}
-            <li><a class="menu-text" href="{$menu.url}">{$menu.titol}</a>
-                <hr>
-            {/foreach}
-    </ul>
-    <div class="mainBody">
-        <div class="collapsibleItems">
-            {foreach from=$portal.menu item=menu}
-                {if $menu.publicat > 0 && $menu.te_fills}
-                    {foreach from=$menu.fills item=submenu}
-                        {if $submenu.url == ""}
-                            {assign var="link" value="{$menus}{$submenu.id}"}
-                        {else}
-                            {assign var="link" value="{$submenu.url}"}
-                        {/if}
-                        {if $submenu.publicat > 0}
-                            <a class="menu-text" id="{$menu.titol}" href="{$link}">{$submenu.titol}</a>
-                        {/if}
-                    {/foreach}
-                {/if}
-            {/foreach}
-        </div>
-        {if $dump_string}
-
-            {foreach name=dumps item=item from=$dump_string}
-                <div>{$item}</div>
-
-            {/foreach}
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="menu-link" href="">La Fira</a></li>
+            <li><a class="menu-link" href="">Àrea expositors</a></li>
+            <li><a class="menu-link" href="">Premsa</a></li>
+            <li><a class="menu-link" href="">Contacte</a></li>
+            <li><a class="menu-link" href="">Com arribar </a></li>
+        </ul>
+        <!-- -->
+        {if isset($portal.template_contingut) }
+            {include file=$portal.template_contingut}
         {/if}
-        <div class="contentDiv">
-            {if isset($portal.template_contingut) }
-                {include file=$portal.template_contingut}
-            {/if}
-        </div>
-    </div>
-    <footer>
-        <div class="footerText">
-            <div id="credits">
-                <div class="util">
-                    <div id="logo_centre">
-                        <a href="http://www.manresa.cat/web/menu/5058-manresa-cor-de-catalunya" target="_blank"><img
-                                src="http://www.manresa.cat/img/header/logo_cor.png" alt="Logo cor de Manresa"
-                                style="width:167px;"></a>
-
-                        <img style="margin-left: 30px;"
-                            src="http://www.festadelallum.cat/web/images/stories/patrim_festiu_gco.png"></img>
-                        <img style="margin-left: 30px; height: 55px;"
-                            src="http://www.festadelallum.cat/web/images/stories/llumcat.jpg"></img>
-
+        <!-- -->
+        <footer>
+            <div class="xarxes">
+                <div class="newsletter">
+                    <p><strong>Subscriu-te a la newsletter</strong></p>
+                    <input type="email" name="" id="email" placeholder="&emsp;Introdueix el teu mail aquí!">
+                    <div class="checkbox-container">
+                        <input type="checkbox" name="condicions" id="condicions" class="browser-default">
+                        <label for="condicions">He llegit i accepto les condicions de privacitat</label>
                     </div>
-                    <div id="text_peu">
-                        <a href="http://www.manresa.cat/web/mapaweb">Mapa web</a> | <a
-                            href="http://www.manresa.cat/web/menu/2023-informacio-i-credits">Avís legal</a> | <a
-                            href="http://www.manresa.cat/web/menu/8148" target="_blank">Política de privacitat</a> | <a
-                            href="http://www.manresa.cat/web/menu/9968">Política de cookies</a> | <a
-                            href="http://www.manresa.cat/web/menu/10013" target="_blank">Accessibilitat</a><br>
-                        © Ajuntament de Manresa - Pl. Major 1 - 08241 Manresa - <strong>+34 93 878 23 00</strong> -
-                        ajt@ajmanresa.cat
+                    <a class="waves-effect waves-light btn newsletterbtn">Envia</a>
+                </div>
+                <div class="socials">
+                    <div class="texts">
+                        <h6>Segueix-nos:</h6>
+                        <div class="icons">
+                            <a>
+                                <img class="logos" src="{$web_urlImg}/instalogo.png">
+                            </a>
+                            <a>
+                                <img class="logos" src="{$web_urlImg}/twitterlogo.png">
+
+                            </a>
+                            <a>
+                                <img class="logos" src="{$web_urlImg}/flogo.png">
+
+                            </a>
+                            <a>
+                                <img class="logos" src="{$web_urlImg}/ytlogo.png">
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="texts">
+                        <h6>Imatges:</h6>
+                        <div class="icons">
+                            <a>
+                                <span class="material-symbols-outlined">
+                                    imagesmode
+                                </span>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="assets/js/main.js"></script>
-    <!-- Materialize Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <div class="fimage">
 
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

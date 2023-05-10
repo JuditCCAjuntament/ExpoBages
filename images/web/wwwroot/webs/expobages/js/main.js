@@ -1,124 +1,50 @@
-//Init materialize sidenav funcrion
+
 $(document).ready(function () {
-  $('.sidenav').sidenav();
-  if (window.matchMedia('(max-width: 768px)').matches) {
-    //Searchbar but the api is wrong
-    $(".notMobile").appendTo(".moibleSearch");
-  }
+    $('.sidenav').sidenav();
 });
 
-//Collapsible
-$(".collapsibleIndicadors").hover(
-  function () {
-    $(".collapsibleItems").css("display", "flex");
-    let id = this.id;
-    $(".collapsibleItems").children().each((index, element) => {
-      if ($(element).attr("id") != id) {
-        $(element).css("display", "none");
-      } else {
-        $(element).css("display", "inline");
-      }
-    });
-
-
-  }, function () {
-  }
-);
-$(".collapsibleItems").hover(
-  function () {
-    
-  },
-  function () {
-    $(this).css("display", "none");
-  }
-);
-
-//Searchbar
-$(".searchTrigger").click(
-  () => {
-    $(".searchContainer").css("display", "flex")
-    $(".linksContainer").css("display", "none")
-  }
-);
-
-//Collapsibles
-$(".goBack").click(
-  () => {
-    $(".searchContainer").css("display", "none")
-    $(".linksContainer").css("display", "flex")
-  }
-);
-
-/////////// Flipbook
-//Current displayed page
-let currentPage = 0;
-//Number of pages
-let count = $(".programa").children().length;
-
-
-function initflipbook() {
-  $(".programa").children().each(
-    function (index) {
-      if (index != 0) {
-        $(this).css("display", "none");
-      }
-    }
-  );
-}
-
-
-function getCurrentPage() {
-  $(".programa").children().each(
-    function (index) {
-      let isDisplayed = ($(this).css("display") != "none")
-      if (isDisplayed) {
-        currentPage = index;
-      }
-
-    }
-  );
-  console.log(currentPage);
-}
-
-function nextPage() {
-  if (currentPage < count - 1) {
-    $(".programa").children().each(
-      function (index) {
-        console.log("i: " + index + "c: " + currentPage);
-        if (index - 1 == currentPage) {
-          $(this).fadeIn(
-            function () {
-            }
-          )
+$(document).ready(function () {
+    $('.carousel.carousel-slider').carousel(
+        {
+            fullWidth: true,
+            indicators: true
         }
-        if (index == currentPage) {
-          $(this).css("display", "none");
-        }
-      }
     );
-    currentPage++;
-  }
-}
+});
 
-function prevPage() {
-  if (currentPage > 0) {
-    $(".programa").children().each(
-      function (index) {
-        console.log("i: " + index + "c: " + currentPage);
-        if (index + 1 == currentPage) {
-          $(this).fadeIn(
+$(document).ready(function () {
+    $( ".hora" ).prepend("<br>")
+});
+
+$(".routes-link").click(
+    function () {
+        $(".buttons").children().each(
             function () {
+                $(this).removeClass("selected");
             }
-          )
-        }
-        if (index == currentPage) {
-          $(this).css("display", "none");
-        }
-      }
-    );
-    currentPage--;
-  }
-}
+        )
+        $(this).addClass("selected");
+        switch ($(this).children().first().text()) {
+            case "Transport Privat":
+                $(" .iframe-1 ").css("display", "block")
+                $(" .iframe-2, .iframe-3, .iframe-4 ").css("display", "none")
+                break;
+            case "Renfe R4":
+                $(" .iframe-2 ").css("display", "block")
+                $(" .iframe-1, .iframe-3, .iframe-4 ").css("display", "none")
+                break;
+            case "FGC R5,R50":
+                $(" .iframe-3 ").css("display", "block")
+                $(" .iframe-2, .iframe-1, .iframe-4 ").css("display", "none")
+                break;
+            case "Autobús":
+                $(" .iframe-4 ").css("display", "block")
+                $(" .iframe-2, .iframe-3, .iframe-1 ").css("display", "none")
+                break;
 
+            default:
+                break;
+        }
+    }
+);
 
-initflipbook();

@@ -1,0 +1,108 @@
+.routes {
+    height: 138vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.buttons {
+    width: 100%;
+    height: 25vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.routes-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.routes-link p {
+    margin: 2px;
+}
+
+.routes-link span {
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 4vw;
+    color: black;
+}
+
+.selected span {
+    border: 4px solid black;
+    color: black;
+    background-color: #ffffff64;
+
+}
+
+.iframes {
+    border: 1px solid black;
+    height: 100vh;
+    width: 100%;
+}
+
+.iframe-1,
+.iframe-2,
+.iframe-3,
+.iframe-4 {
+    height: 100%;
+    width: 100%;
+}
+
+.iframe-1 {
+    display: block;
+}
+
+.iframe-2 {
+    display: none;
+}
+
+.iframe-3 {
+    display: none;
+}
+
+.iframe-4 {
+    display: none;
+}
+
+.routesbtndiv {
+    width: 100%;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crcontainer {
+    position: absolute;
+    width: 68vw;
+    height: 37vh;
+    z-index: -1;
+    padding: 10px;
+    background-image: url("../../img/passeig.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    opacity: 0.8;
+}
+
+.stitle h2 {
+    font-weight: 700 !important;
+}
+
+.routes-link p {
+    font-weight: 700 !important;
+}

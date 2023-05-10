@@ -1,0 +1,90 @@
+.main-section {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../../img/passeig.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35%;
+}
+
+.blur {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.box-link {
+    width: 20vw;
+    height: 20vw;
+    background-image: url("../../img/placeholder.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-link h4 {
+    font-size: 3vw;
+    font-weight: 800 !important;
+}
+
+.box-link1,
+.box-link4 {
+    background: linear-gradient(#b74c97a0, #b74c97a0), url("../../img/1.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: #71bf9a 3px solid;
+}
+
+.box-link2 {
+    background: linear-gradient(#71bf9ba5, #71bf9ba5), url("../../img/2.JPG");
+}
+
+.box-link4 {
+    background-size: cover !important;
+    background: linear-gradient(#b74c97a0, #b74c97a0), url("../../img/4.JPG");
+}
+
+.box-link3,
+.box-link2 {
+    background: linear-gradient(#71bf9ba5, #71bf9ba5), url("../../img/3.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: #b74c97 3px solid;
+}
+
+.flex-line-break {
+    width: 100%;
+}
+
+.paragraf {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+    background-color: #70bf99;
+    color: black;
+    font-weight: bold;
+}
+
+.paragraf p {
+    font-size: 1.5vw;
+}
+
+.paragraf img {
+    height: 100%;
+
+}

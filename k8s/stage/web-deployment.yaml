@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: festadelallum-web-stage
+  name: expobages-web-stage
   labels:
-    app: festadelallum-web-stage
+    app: expobages-web-stage
   namespace: stage
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: festadelallum-web-stage
+      app: expobages-web-stage
   template:
     metadata:
-      name: festadelallum-web-stage
+      name: expobages-web-stage
       labels:
-        app: festadelallum-web-stage
+        app: expobages-web-stage
     spec:
       containers:
-      - name: festadelallum-web-stage
-        image: eu.gcr.io/websmunicipals/festadelallum-web:devel-latest
+      - name: expobages-web-stage
+        image: eu.gcr.io/websmunicipals/expobages-web:devel-latest
         imagePullPolicy: Always
         ports:
           - containerPort: 80

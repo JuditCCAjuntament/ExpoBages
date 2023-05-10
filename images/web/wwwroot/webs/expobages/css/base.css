@@ -1,0 +1,171 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    width: 98vw;
+}
+
+.main-body {
+    min-height: 100vh;
+    width: 68vw;
+    margin-left: 16vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-banner {
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../img/logo.png");
+    overflow: hidden;
+}
+
+.main-banner img {
+    width: 15%;
+    cursor: pointer;
+
+}
+
+.pclnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh !important;
+    width: 100%;
+}
+
+nav {
+    height: 8vh !important;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #b74c97;
+}
+
+.menu-link {
+    line-height: 8vh !important;
+    margin: 0px !important;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: 8vh !important;
+    font-size: 1.3vw;
+}
+
+.xarxes {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: space-between;
+    
+}
+
+.fimage {
+    min-height: 35vh;
+    background-image: url("../../img/skyline.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 31%;
+    justify-content: flex-start;
+}
+
+.newsletter label {
+    color: #2d5164;
+    font-weight: 500 !important;
+
+    
+}
+.checkbox-container label{
+    letter-spacing: 0.75px;
+    min-width: 17vw;
+    text-align: center;
+}
+.newsletter p{
+    color: #2d5164;
+    font-weight:bold;
+    font-weight: 500 !important;
+
+}
+#email {
+    border: 2px #2d5164 solid;
+    padding: 5px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 20vw;
+}
+
+#email::placeholder {
+    color: #2d5164;
+    justify-content: center;
+}
+
+#email:focus {
+    box-shadow: 0px 0px 0px 0px !important;
+    outline: none !important;
+}
+
+.condicions {
+    display: block;
+    accent-color: #2d5164;
+}
+
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: relative !important;
+    opacity: 1 !important;
+    pointer-events: all !important;
+
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15.5vw;
+    justify-content: space-between;
+}
+.newsletterbtn{
+    margin-top: 20px;
+    background-color: #b74c97 !important;
+    border-radius: 25px !important;
+    font-weight: 300 !important;
+    letter-spacing: 1.5px !important;
+    align-self: flex-end;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+.socials{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icons a{
+    padding-right: 15px;
+    font-size: 1vw !important;
+    color: #2d5164;
+}
+.texts{
+    padding-right: 50px;
+}
+h6{
+    color: #2d5164;
+    font-weight: 500 !important;
+}
+.logos{
+    height: 1.2vw;
+}

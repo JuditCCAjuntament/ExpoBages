@@ -1,0 +1,40 @@
+.slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60vh !important;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    height: 60vh !important;
+}
+
+.carousel-item img {
+    height: 60vh !important;
+}
+
+.arrow {
+    top: 22vh;
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+.arrow span {
+    color: rgb(255, 255, 255);
+    /* mix-blend-mode: difference; */
+    font-weight: 500;
+    font-size: 8vw;
+}
+
+.carousel-arrow-left {
+    padding-left: 22px;
+    left: 0px;
+
+}
+
+.carousel-arrow-right {
+    left: 60vw;
+}

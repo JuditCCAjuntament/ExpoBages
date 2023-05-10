@@ -18,21 +18,21 @@ stop-test-local:
 
 #comandes per poder fer els passos de pujar a kubernetes
 create-image:
-	docker build -t observatoriequitat-web:latest images/web/ --no-cache
-	docker tag observatoriequitat-web:latest eu.gcr.io/websmunicipals/observatoriequitat-web:devel-latest
-	docker tag observatoriequitat-web:latest eu.gcr.io/websmunicipals/observatoriequitat-web:master-latest
+	docker build -t expobages-web:latest images/web/ --no-cache
+	docker tag expobages-web:latest eu.gcr.io/websmunicipals/expobages-web:devel-latest
+	docker tag expobages-web:latest eu.gcr.io/websmunicipals/expobages-web:master-latest
 upload-image:
-	docker push eu.gcr.io/websmunicipals/observatoriequitat-web:devel-latest
-	docker push eu.gcr.io/websmunicipals/observatoriequitat-web:master-latest
+	docker push eu.gcr.io/websmunicipals/expobages-web:devel-latest
+	docker push eu.gcr.io/websmunicipals/expobages-web:master-latest
 deploy-stage:
 	kubectl apply -f k8s/stage/
 deploy-prod:
 	kubectl apply -f k8s/prod/
 redeploy-stage:
-	docker build -t festadelallum-web:latest images/web/ --no-cache
-	docker tag festadelallum-web:latest eu.gcr.io/websmunicipals/festadelallum-web:devel-latest
-	docker tag festadelallum-web:latest eu.gcr.io/websmunicipals/festadelallum-web:master-latest
-	docker push eu.gcr.io/websmunicipals/festadelallum-web:devel-latest
-	docker push eu.gcr.io/websmunicipals/festadelallum-web:master-latest
-	kubectl delete deployment festadelallum-web-stage -n stage
+	docker build -t expobages-web:latest images/web/ --no-cache
+	docker tag expobages-web:latest eu.gcr.io/websmunicipals/expobages-web:devel-latest
+	docker tag expobages-web:latest eu.gcr.io/websmunicipals/festadeexpobageslallum-web:master-latest
+	docker push eu.gcr.io/websmunicipals/expobages-web:devel-latest
+	docker push eu.gcr.io/websmunicipals/expobages-web:master-latest
+	kubectl delete deployment expobages-web-stage -n stage
 	kubectl apply -f k8s/stage/

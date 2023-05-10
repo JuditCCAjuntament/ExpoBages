@@ -1,0 +1,49 @@
+.programa{
+    margin-top: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.programa h3{
+    align-self: flex-start;
+    font-weight: bold;
+    color:#b74c97;
+}
+.prgbuttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.prgbtn{
+    width: 14vw;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    background-color: #b74c97;
+    border-radius: 25px;
+    font-size: 12px;
+}
+.prgbtn span{
+    padding-left: 10px;;
+}
+.starter{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+}
+.hora{
+    color: green;
+}
+.text{
+    padding-left: 3vw;
+    font-weight: 500;
+    color: #b74c97;
+}

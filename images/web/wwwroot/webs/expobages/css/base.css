@@ -50,12 +50,13 @@ nav {
 }
 
 .menu-link {
+    color: white !important;
     line-height: 8vh !important;
     margin: 0px !important;
     padding-left: 3vw;
     padding-right: 3vw;
     height: 8vh !important;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
 
 .xarxes {
@@ -209,7 +210,7 @@ a[id="Com arribar"]{
     display: flex;
 }
 .btn a{
-    color: white;
+    color: white !important;
 }
 .endpage-btns{
     display: flex;

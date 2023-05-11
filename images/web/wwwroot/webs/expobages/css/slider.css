@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-around;
     height: 60vh !important;
-    margin-bottom: 10px;
 }
 
 .carousel {
@@ -37,4 +36,7 @@
 
 .carousel-arrow-right {
     left: 60vw;
+}
+.buttons{
+    padding-bottom: 45px;
 }

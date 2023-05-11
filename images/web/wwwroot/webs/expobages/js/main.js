@@ -1,7 +1,9 @@
 
 $(document).ready(function () {
     $('.sidenav').sidenav();
+    $('.collapsible').css("display","none")
 });
+
 
 $(document).ready(function () {
     $('.carousel.carousel-slider').carousel(
@@ -13,7 +15,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $( ".hora" ).prepend("<br>")
+    $(".hora").prepend("<br>")
 });
 
 $(".routes-link").click(
@@ -47,4 +49,3 @@ $(".routes-link").click(
         }
     }
 );
-

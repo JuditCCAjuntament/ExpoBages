@@ -51,6 +51,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -63,88 +64,118 @@
             {/foreach}
 
         {/if}
-        <div class="main-banner">
-            <img src="{$web_urlImg}/m.png" alt="err">
-        </div>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="pclnav hide-on-med-and-down">
-                    <li><a class="menu-link" href="">La Fira</a></li>
-                    <li><a class="menu-link" href="">Àrea expositors</a></li>
-                    <li><a class="menu-link" href="">Premsa</a></li>
-                    <li><a class="menu-link" href="">Contacte</a></li>
-                    <li><a class="menu-link" href="">Com arribar </a></li>
-
-                </ul>
+        <a href="/expobages" style="cursor: pointer;">
+            <div class="main-banner">
+                <img src="{$web_urlImg}/m.png" alt="err">
             </div>
-        </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a class="menu-link" href="">La Fira</a></li>
-            <li><a class="menu-link" href="">Àrea expositors</a></li>
-            <li><a class="menu-link" href="">Premsa</a></li>
-            <li><a class="menu-link" href="">Contacte</a></li>
-            <li><a class="menu-link" href="">Com arribar </a></li>
-        </ul>
-        <!-- -->
-        {if isset($portal.template_contingut) }
-            {include file=$portal.template_contingut}
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="hide-on-med-and-down">
+                        {foreach from=$portal.menu item=menu}
+                            {if $menu.publicat < 2}
+                                {if $menu.te_fills == 1}
+                                    {assign var="expand" value=false}
+                                    {foreach from=$menu.fills item=submenu}
+                                        {if $submenu.publicat > 0}
+                                            {assign var="expand" value=true}
+                                        {/if}
+                                    {/foreach}
+                                    <li class="menu-list"><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
+                                    {else}
+                                            href="/expobages/menu/{$menu.id}" {/if}>{$menu.titol}</a>
+                                        <div class="collapsible">
+                                            {foreach from=$menu.fills item=submenu}
+                                                <a class="browser-default" {if $submenu.url != ""} href="{$submenu.url}" 
+                                                {else}
+                                                    href="/expobages/menu/{$submenu.id}" {/if}>{$submenu.titol}</a>
+                                            {/foreach}
+                                        </div>
+                                    </li>
 
-        {/if}
-        <!-- -->
-
-        <footer>
-            <div class="xarxes">
-                <div class="newsletter">
-                    <p><strong>Subscriu-te a la newsletter</strong></p>
-                    <input type="email" name="" id="email" placeholder="&emsp;Introdueix el teu mail aquí!">
-                    <div class="checkbox-container">
-                        <input type="checkbox" name="condicions" id="condicions" class="browser-default">
-                        <label for="condicions">He llegit i accepto les condicions de privacitat</label>
-                    </div>
-                    <a class="waves-effect waves-light btn newsletterbtn">Envia</a>
+                                {else}
+                                    <li><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
+                                    {else}
+                                            href="/expobages/menu/{$menu.id}" {/if} id="{$menu.titol}">{$menu.titol}</a></li>
+                                {/if}
+                            {/if}
+                        {/foreach}
+                    </ul>
                 </div>
-                <div class="socials">
-                    <div class="texts">
-                        <h6>Segueix-nos:</h6>
-                        <div class="icons">
-                            <a>
-                                <img class="logos" src="{$web_urlImg}/instalogo.png">
-                            </a>
-                            <a>
-                                <img class="logos" src="{$web_urlImg}/twitterlogo.png">
+            </nav>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a class="menu-link" href="">La Fira</a></li>
+                <li><a class="menu-link" href="">Àrea expositors</a></li>
+                <li><a class="menu-link" href="">Premsa</a></li>
+                <li><a class="menu-link" href="">Contacte</a></li>
+                <li><a class="menu-link" href="">Com arribar </a></li>
+            </ul>
+            <!-- -->
+            {if isset($portal.template_contingut) }
+                <h4 class="nomargin">{$pagina.titol}</h4>
+                {include file=$portal.template_contingut}
+                <div class="endpage-btns">
+                    {foreach from=$pagina.contingut.fills item=item}
+                        <a class="btn endpage-btn">{$item.titol}</a>
+                    {/foreach}
+                </div>
+                
+            {/if}
+            <!-- -->
 
-                            </a>
-                            <a>
-                                <img class="logos" src="{$web_urlImg}/flogo.png">
+            <footer>
+                <div class="xarxes">
+                    <div class="newsletter">
+                        <p><strong>Subscriu-te a la newsletter</strong></p>
+                        <input type="email" name="" id="email" placeholder="&emsp;Introdueix el teu mail aquí!">
+                        <div class="checkbox-container">
+                            <input type="checkbox" name="condicions" id="condicions" class="browser-default">
+                            <label for="condicions">He llegit i accepto les condicions de privacitat</label>
+                        </div>
+                        <a class="waves-effect waves-light btn newsletterbtn">Envia</a>
+                    </div>
+                    <div class="socials">
+                        <div class="texts">
+                            <h6>Segueix-nos:</h6>
+                            <div class="icons">
+                                <a>
+                                    <img class="logos" src="{$web_urlImg}/instalogo.png">
+                                </a>
+                                <a>
+                                    <img class="logos" src="{$web_urlImg}/twitterlogo.png">
 
-                            </a>
-                            <a>
-                                <img class="logos" src="{$web_urlImg}/ytlogo.png">
+                                </a>
+                                <a>
+                                    <img class="logos" src="{$web_urlImg}/flogo.png">
 
-                            </a>
+                                </a>
+                                <a>
+                                    <img class="logos" src="{$web_urlImg}/ytlogo.png">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="texts">
+                            <h6>Imatges:</h6>
+                            <div class="icons">
+                                <a>
+                                    <span class="material-symbols-outlined">
+                                        imagesmode
+                                    </span>
+                                </a>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="texts">
-                        <h6>Imatges:</h6>
-                        <div class="icons">
-                            <a>
-                                <span class="material-symbols-outlined">
-                                    imagesmode
-                                </span>
-                            </a>
-
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="fimage">
+                <div class="fimage">
 
-            </div>
-        </footer>
-    
+                </div>
+            </footer>
+
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{$web_urlJs}/menu.js"></script>
 </body>
 
 </html>

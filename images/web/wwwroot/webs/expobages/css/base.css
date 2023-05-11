@@ -3,6 +3,7 @@ body {
     font-size: 16px;
     min-height: 100vh;
     width: 98vw;
+    /* overflow-x: hidden; */
 }
 
 .main-body {
@@ -19,7 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("../img/logo.png");
+    background-image: url("/expobages/assets/img/logo.png");
     overflow: hidden;
 }
 
@@ -54,7 +55,7 @@ nav {
     padding-left: 3vw;
     padding-right: 3vw;
     height: 8vh !important;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
 }
 
 .xarxes {
@@ -70,7 +71,7 @@ nav {
 
 .fimage {
     min-height: 35vh;
-    background-image: url("../img/skyline.png");
+    background-image: url("/expobages/assets/img/skyline.png");
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -168,4 +169,76 @@ h6{
 }
 .logos{
     height: 1.2vw;
+}
+.hide-on-med-and-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100% !important;
+}
+
+a[id="Com arribar"]{
+    display: none;
+}
+
+
+.collapsible{
+    display: none;
+    position: absolute;
+    min-width: 13vw;
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin: 0 !important;
+}
+.collapsible a{
+    color: #b74c97 !important;  
+}
+.detall-titol{
+    display: none;
+}
+.contingut-detall{
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+
+}
+.detall-item div{
+    margin: 3.5px;
+    display: flex;
+}
+.btn a{
+    color: white;
+}
+.endpage-btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.endpage-btn{
+    flex: 1;
+    color: black !important;    
+    font-size: 1.2vw !important;
+    font-weight: 600;
+    border: 1px solid #25baa7 !important;   
+    min-width: fit-content !important;
+    max-width: 40% !important;
+    margin: 1%;
+    border-radius: 12px !important;
+    background: rgba(37, 186, 167, 0.2) !important;
+}
+.nomargin{
+    margin: 0 !important;
+    margin-top: 16px !important;
+    font-weight: 500;
+}
+p:empty{
+    display: none !important;
+}
+a{
+    color: black !important;
 }

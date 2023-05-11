@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-top: 15px;
 }
 
 .buttons {
@@ -58,7 +58,7 @@
 .iframe-3,
 .iframe-4 {
     height: 100%;
-    width: 100%;
+    width: 99.9%;
 }
 
 .iframe-1 {

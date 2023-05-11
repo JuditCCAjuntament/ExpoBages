@@ -51,44 +51,71 @@
 
         {/if}
 
-        <div class="main-banner">
-            <img src="{$web_urlImg}/m.png" alt="err">
-        </div>
+        <a href="/expobages" style="cursor: pointer;">
+            <div class="main-banner">
+                <img src="{$web_urlImg}/m.png" alt="err">
+            </div>
+        </a>
         <nav>
             <div class="nav-wrapper">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="pclnav hide-on-med-and-down">
-                    <li><a class="menu-link" href="">La Fira</a></li>
-                    <li><a class="menu-link" href="">Àrea expositors</a></li>
-                    <li><a class="menu-link" href="">Premsa</a></li>
-                    <li><a class="menu-link" href="">Contacte</a></li>
-                    <li><a class="menu-link" href="">Com arribar </a></li>
+                <ul class="hide-on-med-and-down">
+                    {foreach from=$portal.menu item=menu}
+                        {if $menu.publicat < 2}
+                            {if $menu.te_fills == 1}
+                                <li class="menu-list"><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
+                                {else}
+                                        href="/expobages/menu/{$menu.id}" {/if}>{$menu.titol}</a>
+                                    <div class="collapsible">
 
+                                        {foreach from=$menu.fills item=submenu}
+                                            <a class="browser-default" {if $submenu.url != ""} href="{$submenu.url}" 
+                                            {else}
+                                                href="/expobages/menu/{$submenu.id}" {/if}>{$submenu.titol}</a>
+                                        {/foreach}
+                                    </div>
+                                </li>
+
+                            {else}
+                                <li><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
+                                {else}
+                                        href="/expobages/menu/{$menu.id}" {/if} id="{$menu.titol}">{$menu.titol}</a></li>
+                            {/if}
+                        {/if}
+                    {/foreach}
                 </ul>
             </div>
         </nav>
-        <ul class="sidenav" id="mobile-demo">
-            <li><a class="menu-link" href="">La Fira</a></li>
-            <li><a class="menu-link" href="">Àrea expositors</a></li>
-            <li><a class="menu-link" href="">Premsa</a></li>
-            <li><a class="menu-link" href="">Contacte</a></li>
-            <li><a class="menu-link" href="">Com arribar </a></li>
+        <ul class="sidenav mobileNavContainer" id="mobile-demo">
+            {foreach from=$portal.menu item=menu}
+                <li><a class="menu-text" href="{$menu.url}">{$menu.titol}</a>
+                    <hr>
+                {/foreach}
         </ul>
+
         <div class="main-section">
             <div class="blur">
-                <div class="box-link box-link1">
-                    <h4>Horaris</h4>
-                </div>
-                <div class="box-link box-link2">
-                    <h4>Mapa</h4>
-                </div>
+                <a href="/expobages/menu/8893">
+                    <div class="box-link box-link1">
+                        <h4>Horaris</h4>
+                    </div>
+                </a>
+                <a href="/expobages/menu/8892">
+                    <div class="box-link box-link2">
+                        <h4>Mapa</h4>
+                    </div>
+                </a>
                 <div class="flex-line-break"></div>
-                <div class="box-link box-link3">
-                    <h4>Àrea Expositors</h4>
-                </div>
-                <div class="box-link box-link4">
-                    <h4>TecnoBages</h4>
-                </div>
+                <a href="/expobages/menu/8885">
+                    <div class="box-link box-link3">
+                        <h4>Àrea Expositors</h4>
+                    </div>
+                </a>
+                <a href="/expobages/menu/14761">
+                    <div class="box-link box-link4">
+                        <h4>TecnoBages</h4>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="paragraf">
@@ -241,6 +268,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{$web_urlJs}/main.js"></script>
+    <script src="{$web_urlJs}/menu.js"></script>
 </body>
 
 

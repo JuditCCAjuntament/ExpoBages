@@ -83,12 +83,12 @@
                                     {/foreach}
                                     <li class="menu-list"><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
                                     {else}
-                                            href="/expobages/menu/{$menu.id}" {/if}>{$menu.titol}</a>
+                                            href="menu/{$menu.id}" {/if}>{$menu.titol}</a>
                                         <div class="collapsible">
                                             {foreach from=$menu.fills item=submenu}
                                                 <a class="browser-default" {if $submenu.url != ""} href="{$submenu.url}" 
                                                 {else}
-                                                    href="/expobages/menu/{$submenu.id}" {/if}>{$submenu.titol}</a>
+                                                    href="menu/{$submenu.id}" {/if}>{$submenu.titol}</a>
                                             {/foreach}
                                         </div>
                                     </li>
@@ -96,7 +96,7 @@
                                 {else}
                                     <li><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
                                     {else}
-                                            href="/expobages/menu/{$menu.id}" {/if} id="{$menu.titol}">{$menu.titol}</a></li>
+                                            href="menu/{$menu.id}" {/if} id="{$menu.titol}">{$menu.titol}</a></li>
                                 {/if}
                             {/if}
                         {/foreach}

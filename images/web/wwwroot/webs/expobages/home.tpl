@@ -65,13 +65,13 @@
                             {if $menu.te_fills == 1}
                                 <li class="menu-list"><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
                                 {else}
-                                        href="/expobages/menu/{$menu.id}" {/if}>{$menu.titol}</a>
+                                        href="menu/{$menu.id}" {/if}>{$menu.titol}</a>
                                     <div class="collapsible">
 
                                         {foreach from=$menu.fills item=submenu}
                                             <a class="browser-default" {if $submenu.url != ""} href="{$submenu.url}" 
                                             {else}
-                                                href="/expobages/menu/{$submenu.id}" {/if}>{$submenu.titol}</a>
+                                                href="menu/{$submenu.id}" {/if}>{$submenu.titol}</a>
                                         {/foreach}
                                     </div>
                                 </li>
@@ -79,7 +79,7 @@
                             {else}
                                 <li><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
                                 {else}
-                                        href="/expobages/menu/{$menu.id}" {/if} id="{$menu.titol}">{$menu.titol}</a></li>
+                                        href="menu/{$menu.id}" {/if} id="{$menu.titol}">{$menu.titol}</a></li>
                             {/if}
                         {/if}
                     {/foreach}
@@ -95,23 +95,23 @@
 
         <div class="main-section">
             <div class="blur">
-                <a href="/expobages/menu/8893">
+                <a href="menu/8893">
                     <div class="box-link box-link1">
                         <h4>Horaris</h4>
                     </div>
                 </a>
-                <a href="/expobages/menu/8892">
+                <a href="menu/8892">
                     <div class="box-link box-link2">
                         <h4>Mapa</h4>
                     </div>
                 </a>
                 <div class="flex-line-break"></div>
-                <a href="/expobages/menu/8885">
+                <a href="menu/8885">
                     <div class="box-link box-link3">
                         <h4>Àrea Expositors</h4>
                     </div>
                 </a>
-                <a href="/expobages/menu/14761">
+                <a href="/tecnobages">
                     <div class="box-link box-link4">
                         <h4>TecnoBages</h4>
                     </div>

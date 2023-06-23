@@ -77,9 +77,8 @@
                                 </li>
 
                             {else}
-                                <li><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
-                                {else}
-                                        href="menu/{$menu.id}" {/if} id="{$menu.titol}">{$menu.titol}</a></li>
+                                <li><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" {else} href="menu/{$menu.id}" {/if}
+                                        id="{$menu.titol}">{$menu.titol}</a></li>
                             {/if}
                         {/if}
                     {/foreach}
@@ -105,7 +104,6 @@
                         <h4>Mapa</h4>
                     </div>
                 </a>
-                <div class="flex-line-break"></div>
                 <a href="menu/8885">
                     <div class="box-link box-link3">
                         <h4>Àrea Expositors</h4>
@@ -125,19 +123,14 @@
                 al
                 centre de la ciutat</p>
         </div>
-
+        <!-- --->
         <div class="slider">
-
             <div class="carousel carousel-slider">
-                <a class="carousel-item"><img src="{$web_urlImg}/1.JPG"></a>
-                <a class="carousel-item"><img src="{$web_urlImg}/2.JPG"></a>
-                <a class="carousel-item"><img src="{$web_urlImg}/3.JPG"></a>
-                <a class="carousel-item"><img src="{$web_urlImg}/4.JPG"></a>
-                <a class="carousel-item"><img src="{$web_urlImg}/5.JPG"></a>
-                <a class="carousel-item"><img src="{$web_urlImg}/6.JPG"></a>
-                <a class="carousel-item"><img src="{$web_urlImg}/7.JPG"></a>
-                <a class="carousel-item"><img src="{$web_urlImg}/8.JPG"></a>
-
+                {foreach from=$portal.destacats item=destacat }
+                    {if $destacat.id >=1781}
+                        <a class="carousel-item"><img src="https://web.manresa.cat/media/docs/destacats/{$destacat.imatge}"></a>
+                    {/if}
+                {/foreach}
 
             </div>
             <a class="arrow carousel-arrow-left" onclick="$('.carousel').carousel('prev');">
@@ -152,14 +145,15 @@
             </a>
         </div>
         <div class="routes">
+            <div class="stitle">
+                <h2>
+                    Com arribar-hi?
+                </h2>
+            </div>
+            <div class="flex-line-break"></div>
             <div class="routesbtndiv">
                 <div class="crcontainer">
 
-                </div>
-                <div class="stitle">
-                    <h2>
-                        Com arribar-hi?
-                    </h2>
                 </div>
                 <div class="buttons">
                     <a class="routes-link selected">
@@ -174,6 +168,8 @@
                             train
                         </span>
                     </a>
+                    <div class="flex-line-break"></div>
+
                     <a class="routes-link">
                         <p>FGC R5,R50</p>
                         <span class="material-symbols-outlined">

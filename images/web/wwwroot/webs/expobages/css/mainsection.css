@@ -1,5 +1,5 @@
 .main-section {
-    min-height: 100vh;
+    height: 50vh;
     width: 100%;
     background-image: url("/expobages/assets/img/passeig.jpg");
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     width: 100%;
-    height: 120vh;
+    height: 50vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,8 +21,8 @@
 }
 
 .box-link {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     background-image: url("/expobages/assets/img/placeholder.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +35,7 @@
 }
 
 .box-link h4 {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 800 !important;
 }
 

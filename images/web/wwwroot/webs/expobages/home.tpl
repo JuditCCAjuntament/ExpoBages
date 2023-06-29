@@ -53,7 +53,7 @@
 
         <a href="/expobages" style="cursor: pointer;">
             <div class="main-banner">
-                <img src="{$web_urlImg}/m.png" alt="err">
+            <a href="firamanresa.cat">                <img src="{$web_urlImg}/m.png" alt="err"></a>
             </div>
         </a>
         <nav>
@@ -187,26 +187,26 @@
             <div class="iframes">
                 <div class="iframe-1">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.1587095352156!2d1.8450112154367415!3d41.7386694792335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4f7f3e91de0df%3A0x621fc22b58c50c7!2sPalau%20Firal!5e0!3m2!1sca!2ses!4v1684219995156!5m2!1sca!2ses"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.76225564986!2d1.8207447752775359!3d41.72564877494665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a45872c7935ebb%3A0x92b68c86064ef553!2sPasseig%20de%20Pere%20III%2C%203%2C%2008242%20Manresa%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1688018623754!5m2!1ses!2ses"                        
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="iframe-2">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d382702.87622399896!2d1.5271128489910963!3d41.46381678824103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x12a38cabe44f1315%3A0x4f8f2b7df07de263!2sSant%20Vicen%C3%A7%20de%20Calders%2C%20Carrer%20Estaci%C3%B3%2C%20Coma-ruga!3m2!1d41.1861949!2d1.5248317!4m5!1s0x12a4f7f3e91de0df%3A0x621fc22b58c50c7!2sPalau%20Firal%2C%20Carrer%20de%20Castelladral%2C%205%2C%2008243%20Manresa%2C%20Barcelona!3m2!1d41.7386695!2d1.8471999!5e0!3m2!1sca!2ses!4v1684220547488!5m2!1sca!2ses"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d382248.78630805836!2d1.6765127286302661!3d41.540697522699354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688018713084!5m2!1ses!2ses"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="iframe-3">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d382223.7942396233!2d1.6754416330134942!3d41.544925480670834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m5!1s0x12a4f7f3e91de0df%3A0x621fc22b58c50c7!2sPalau%20Firal%2C%20Carrer%20de%20Castelladral%2C%205%2C%2008243%20Manresa%2C%20Barcelona!3m2!1d41.7386695!2d1.8471999!5e0!3m2!1sca!2ses!4v1684220587968!5m2!1sca!2ses"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d382248.78630805836!2d1.6765127286302661!3d41.540697522699354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688018767108!5m2!1ses!2ses"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="iframe-4">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d11909.228651700709!2d1.8250326523140943!3d41.735467102499186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x12a4580a3de3fc01%3A0xf15a294ccdca803d!2sManresa!3m2!1d41.7292826!2d1.8225154!4m5!1s0x12a4f7f3e91de0df%3A0x621fc22b58c50c7!2sPalau%20Firal%2C%20Carrer%20de%20Castelladral%2C%205%2C%2008243%20Manresa%2C%20Barcelona!3m2!1d41.7386695!2d1.8471999!5e0!3m2!1sca!2ses!4v1684220422685!5m2!1sca!2ses"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d381866.25727354456!2d1.6754416957205216!3d41.60537223060853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688019057829!5m2!1ses!2ses"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>

@@ -66,7 +66,7 @@
         {/if}
         <a href="/expobages" style="cursor: pointer;">
             <div class="main-banner">
-                <img src="{$web_urlImg}/m.png" alt="err">
+            <a href="firamanresa.cat">                <img src="{$web_urlImg}/m.png" alt="err"></a>
             </div>
             <nav>
                 <div class="nav-wrapper">

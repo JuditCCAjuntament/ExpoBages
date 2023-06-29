@@ -52,8 +52,8 @@
         {/if}
 
         <a href="/expobages" style="cursor: pointer;">
-            <div class="main-banner">
-            <a href="firamanresa.cat">                <img src="{$web_urlImg}/m.png" alt="err"></a>
+            <div class="main-banner" onclick="window.location.href = '/expobages';">
+                <a href="firamanresa.cat"> <img src="{$web_urlImg}/m.png" alt="err"></a>
             </div>
         </a>
         <nav>
@@ -187,26 +187,26 @@
             <div class="iframes">
                 <div class="iframe-1">
                     <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.76225564986!2d1.8207447752775359!3d41.72564877494665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a45872c7935ebb%3A0x92b68c86064ef553!2sPasseig%20de%20Pere%20III%2C%203%2C%2008242%20Manresa%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1688018623754!5m2!1ses!2ses"                        
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.76225564986!2d1.8207447752775359!3d41.72564877494665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a45872c7935ebb%3A0x92b68c86064ef553!2sPasseig%20de%20Pere%20III%2C%203%2C%2008242%20Manresa%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1688018623754!5m2!1ses!2ses"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="iframe-2">
                     <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d382248.78630805836!2d1.6765127286302661!3d41.540697522699354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688018713084!5m2!1ses!2ses"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d382248.78630805836!2d1.6765127286302661!3d41.540697522699354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688018713084!5m2!1ses!2ses"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="iframe-3">
                     <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d382248.78630805836!2d1.6765127286302661!3d41.540697522699354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688018767108!5m2!1ses!2ses"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d382248.78630805836!2d1.6765127286302661!3d41.540697522699354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688018767108!5m2!1ses!2ses"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="iframe-4">
                     <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d381866.25727354456!2d1.6754416957205216!3d41.60537223060853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688019057829!5m2!1ses!2ses"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d381866.25727354456!2d1.6754416957205216!3d41.60537223060853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e3!4m5!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!3m2!1d41.3873974!2d2.168568!4m3!3m2!1d41.7257889!2d1.823427!5e0!3m2!1ses!2ses!4v1688019057829!5m2!1ses!2ses"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>

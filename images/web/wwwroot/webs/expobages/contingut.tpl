@@ -65,8 +65,8 @@
 
         {/if}
         <a href="/expobages" style="cursor: pointer;">
-            <div class="main-banner">
-            <a href="firamanresa.cat">                <img src="{$web_urlImg}/m.png" alt="err"></a>
+            <div class="main-banner" onclick="window.location.href = '/expobages';">
+                <a href="firamanresa.cat"> <img src="{$web_urlImg}/m.png" alt="err"></a>
             </div>
             <nav>
                 <div class="nav-wrapper">
@@ -95,8 +95,8 @@
 
                                 {else}
                                     <li><a class="menu-link" {if $menu.url != ""} href="{$menu.url}" 
-                                    {else}
-                                            href="menu/{$menu.id}" {/if} id="{$menu.titol}">{$menu.titol}</a></li>
+                                    {else} href="menu/{$menu.id}"
+                                            {/if} id="{$menu.titol}">{$menu.titol}</a></li>
                                 {/if}
                             {/if}
                         {/foreach}
@@ -119,7 +119,7 @@
                         <a class="btn endpage-btn">{$item.titol}</a>
                     {/foreach}
                 </div>
-                
+
             {/if}
             <!-- -->
 

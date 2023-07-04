@@ -88,3 +88,64 @@
     height: 100%;
 
 }
+@media only screen and (max-width: 720px) {
+    .blur {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: auto    ;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    .box-link {
+        width: 80vw;
+        height: 80vw;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-section {
+        height: auto;
+    }
+    .box-link h4 {
+        font-size: 10vw;
+        font-weight: 800 !important;
+    }
+    .paragraf {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        height: auto;
+        background-color: #70bf99;
+        color: black;
+        font-weight: bold;
+        overflow: hidden;
+        height: 5vh;
+        
+    }
+    
+    .paragraf p {
+        margin: 10px;
+        font-size:5vw;
+        display: none;
+        text-align: center;
+    }
+    
+    .paragraf img {
+        height: 25vh;
+        display: none;
+
+    }
+}

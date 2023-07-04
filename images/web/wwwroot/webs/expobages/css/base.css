@@ -67,14 +67,14 @@ nav {
     padding-top: 1%;
     padding-bottom: 1%;
     justify-content: space-between;
-    
+
 }
 
 .fimage {
     min-height: 35vh;
     background-image: url("/expobages/assets/img/skyline.png");
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .newsletter {
@@ -89,19 +89,22 @@ nav {
     color: #2d5164;
     font-weight: 500 !important;
 
-    
+
 }
-.checkbox-container label{
+
+.checkbox-container label {
     letter-spacing: 0.75px;
     min-width: 17vw;
     text-align: center;
 }
-.newsletter p{
+
+.newsletter p {
     color: #2d5164;
-    font-weight:bold;
+    font-weight: bold;
     font-weight: 500 !important;
 
 }
+
 #email {
     border: 2px #2d5164 solid;
     padding: 5px;
@@ -133,14 +136,16 @@ nav {
     pointer-events: all !important;
 
 }
-.checkbox-container{
+
+.checkbox-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 15.5vw;
     justify-content: space-between;
 }
-.newsletterbtn{
+
+.newsletterbtn {
     margin-top: 20px;
     background-color: #b74c97 !important;
     border-radius: 25px !important;
@@ -150,40 +155,45 @@ nav {
     padding-left: 40px !important;
     padding-right: 40px !important;
 }
-.socials{
+
+.socials {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
 }
 
-.icons a{
+.icons a {
     padding-right: 15px;
     font-size: 1vw !important;
     color: #2d5164;
 }
-.texts{
+
+.texts {
     padding-right: 50px;
 }
-h6{
+
+h6 {
     color: #2d5164;
     font-weight: 500 !important;
 }
-.logos{
+
+.logos {
     height: 1.2vw;
 }
-.hide-on-med-and-down{
+
+.hide-on-med-and-down {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100% !important;
 }
 
-a[id="Com arribar"]{
+a[id="Com arribar"] {
     display: none;
 }
 
 
-.collapsible{
+.collapsible {
     display: none;
     position: absolute;
     min-width: 13vw;
@@ -193,26 +203,32 @@ a[id="Com arribar"]{
     z-index: 2;
     margin: 0 !important;
 }
-.collapsible a{
-    color: #b74c97 !important;  
+
+.collapsible a {
+    color: #b74c97 !important;
 }
-.detall-titol{
+
+.detall-titol {
     display: none;
 }
-.contingut-detall{
+
+.contingut-detall {
     padding: 10px;
     border: 1px solid lightgrey;
     border-radius: 10px;
 
 }
-.detall-item div{
+
+.detall-item div {
     margin: 3.5px;
     display: flex;
 }
-.btn a{
+
+.btn a {
     color: white !important;
 }
-.endpage-btns{
+
+.endpage-btns {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -220,26 +236,119 @@ a[id="Com arribar"]{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.endpage-btn{
+
+.endpage-btn {
     flex: 1;
-    color: black !important;    
+    color: black !important;
     font-size: 1.2vw !important;
     font-weight: 600;
-    border: 1px solid #25baa7 !important;   
+    border: 1px solid #25baa7 !important;
     min-width: fit-content !important;
     max-width: 40% !important;
     margin: 1%;
     border-radius: 12px !important;
     background: rgba(37, 186, 167, 0.2) !important;
 }
-.nomargin{
+
+.nomargin {
     margin: 0 !important;
     margin-top: 16px !important;
     font-weight: 500;
 }
-p:empty{
+
+p:empty {
     display: none !important;
 }
-a{
+
+a {
     color: black !important;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .main-body {
+        min-height: 100vh;
+        max-width: 100vw;
+        width: 100vw;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+    }
+
+    .main-banner {
+        min-height: 20vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url("/expobages/assets/img/logo.png");
+        overflow: hidden;
+    }
+
+    .main-banner img {
+        width: 15%;
+        cursor: pointer;
+
+    }
+
+    .xarxes {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        justify-content: space-between;
+
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .newsletterbtn {
+        margin-top: 20px;
+        background-color: #b74c97 !important;
+        border-radius: 25px !important;
+        font-weight: 300 !important;
+        letter-spacing: 1.5px !important;
+        align-self: center;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    .checkbox-container label {
+        letter-spacing: 0.75px;
+        min-width: 80vw;
+        text-align: left;
+        padding-left: 10px;
+        
+    }
+    #email {
+        border: 2px #2d5164 solid;
+        padding: 5px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        width: 95vw;
+    }
+    .socials {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 98vw;
+        justify-content: space-around;
+    }
+    .logos {
+        height: 5vw;
+    }
 }

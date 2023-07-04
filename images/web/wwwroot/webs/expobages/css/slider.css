@@ -40,3 +40,24 @@
 .buttons{
     padding-bottom: 45px;
 }
+
+@media only screen and (max-width: 720px) {
+    .slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 40vh !important;
+    }
+    
+    .carousel {
+        height: 40vh !important;
+    }
+    
+    .carousel-item img {
+        height: 40vh !important;
+
+    }
+    .carousel-arrow-right {
+    left: 86vw;
+    }
+}

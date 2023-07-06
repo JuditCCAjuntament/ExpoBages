@@ -58,7 +58,7 @@
         </a>
         <nav>
             <div class="nav-wrapper">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-symbols-outlined">menu</i></a>
                 <ul class="hide-on-med-and-down">
                     {foreach from=$portal.menu item=menu}
                         {if $menu.publicat < 2}

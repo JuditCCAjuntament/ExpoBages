@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: ingress-expobages-web
   annotations:
-    kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: g
     cert-manager.io/issuer: "letsencrypt-web-firamanresa-cat"
 spec:
   tls:

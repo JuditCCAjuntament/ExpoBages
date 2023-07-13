@@ -16,7 +16,7 @@ spec:
         app: expobages-web
     spec:
       containers:
-      - name: ciutat-agora-web
+      - name: expobages-web
         image: eu.gcr.io/websmunicipals/expobages-web:master-latest
         imagePullPolicy: Always
         ports:
